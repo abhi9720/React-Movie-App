@@ -4,7 +4,7 @@ const MoviesTable = (props) => {
     const { isloading, content, setContent, filterContent } = props
 
     function deleteMovie(movieid) {
-        let restMovies = content.filter(movie => movie._id != movieid);
+        let restMovies = content.filter(movie => movie._id !== movieid);
         setContent(restMovies)
 
     }
